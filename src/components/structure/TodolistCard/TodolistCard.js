@@ -39,10 +39,11 @@ const TodolistCard = (props) => {
                 </a>
                 <div class="dropdown-menu" aria-labelledby="triggerId1">
                   <a class="dropdown-item" href="#">
-                    <i class="fa fa-pencil mr-1"></i> Edit
+                    <i class="fa fa-pencil mr-1"></i> 
+                    Editar
                   </a>
                   <a class="dropdown-item text-danger" href="#">
-                    <i class="fa fa-trash mr-1"></i> Delete
+                    <i class="fa fa-trash mr-1"></i> Excluir
                   </a>
                 </div>
               </div>

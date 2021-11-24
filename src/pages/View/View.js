@@ -60,13 +60,14 @@ const View = () => {
         <p className="text-center">
           Data de criação: <span>{todolist.dataCriacao}</span>
         </p>
-        <h5 className="card-text">{todolist.descricao}</h5>
-        <div className="btn-group mt-3 ">
-          <Link to={`/edit/${todolist._id}`} className="btn cssbutton ">
-            Editar
-          </Link>
-          <button className="btn btn-danger" onClick={AbreModal}>
-            Excluir
+
+        <h5 class="card-text">{todolist.descricao}</h5>
+          <div class="dropdown-menu">
+            <Link to={`/edit/${todolist._id}`} className="fa fa-pencil mr-1">
+              Editar
+           </Link>
+          <button class="dropdown-item text-danger" onClick={AbreModal}>
+            Escluir
           </button>
         </div>
       </div>
