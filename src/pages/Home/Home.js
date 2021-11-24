@@ -1,13 +1,17 @@
-import React from 'react'
-import ListLista from '../../components/structure/ListLista';
+import React from "react";
+import ListTodolist from "../../components/structure/ListTodolist";
+import './Home.css'
 
 const Home = () => {
   return (
-    <div className="container">
-      <h1 className="text-center h1">PAGINA DA HOME</h1>
-      <ListLista/>
+    <section class="main-content">
+    <div class="container">
+      <h1 class="text-center h1">Pagina de tarefas</h1>
+      <ListTodolist/>
     </div>
-  )
-}
+    </section>
+    
+  );
+};
 
-export default Home
+export default Home;

@@ -27,7 +27,7 @@ const Cadastro = () => {
 
     const request = await Api.fetchPost(lista);
     if (request.status === 500) {
-      alert('ERRO NO SERVIDOR')
+      alert('Falha na conexão')
     }
     const result = await request.json();
     if (result.error) {

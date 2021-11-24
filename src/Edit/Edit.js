@@ -25,7 +25,7 @@ const Edit = () => {
   };
 
   const handleFieldsChange = (evento) => {
-    const campos = { ...todolist};
+    const campos = { ...todolist };
 
     campos[evento.target.name] = evento.target.value;
 
@@ -53,7 +53,7 @@ const Edit = () => {
                 className="form-control"
                 id="titulo"
                 placeholder="Digite o nome da tarefa"
-                value={todolist.titulo}
+                value={tarefa.titulo}
                 onChange={handleFieldsChange}
                 required
               />
@@ -68,7 +68,7 @@ const Edit = () => {
                 className="form-control"
                 id="descricao"
                 placeholder="Digite a descrição da tarefa"
-                value={todolist.descricao}
+                value={tarefa.descricao}
                 onChange={handleFieldsChange}
               />
               <label htmlFor="descricao">Descrição</label>
@@ -80,7 +80,7 @@ const Edit = () => {
                 name="status"
                 id="status"
                 className="form-control"
-                value={todolist.status}
+                value={tarefa.status}
                 onChange={handleFieldsChange}
               >
                 <option value="Fazer">Fazer</option>
@@ -98,7 +98,7 @@ const Edit = () => {
                 name="prioridade"
                 id="prioridade"
                 className="form-control"
-                value={todolist.prioridade}
+                value={tarefa.prioridade}
                 onChange={handleFieldsChange}
               >
                 <option value="Baixa">Baixa</option>
@@ -115,7 +115,7 @@ const Edit = () => {
                 className="form-control"
                 id="prazo"
                 placeholder="Coloque o prazo para fazer"
-                value={todolist.prazo}
+                value={tarefa.prazo}
                 onChange={handleFieldsChange}
               />
               <label htmlFor="prazo"> Prazo</label>
@@ -129,7 +129,7 @@ const Edit = () => {
               <button type="submit" className="btn btncss">
                 Editar
               </button>
-              <Link to={`/view/${todolist._id}`}>
+              <Link to={`/view/${tarefa._id}`}>
                 <button type="button" className="btn btn-danger">
                   Cancelar
                 </button>

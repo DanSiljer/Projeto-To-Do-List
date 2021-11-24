@@ -1,5 +1,5 @@
 import React from "react";
-import Api from "../../api/api";
+import Api from "../../../api/api";
 import { Link, useNavigate } from "react-router-dom";
 
 const Cadastro = () => {
