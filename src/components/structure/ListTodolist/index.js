@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import TodolistCard from "../TodolistCard";
-import Api from '../../../api/api'
+import api from '../../../api/api'
 
 const ListTodolist = () => {
   const [todolist, setTodolist] = useState([]);
@@ -10,7 +10,7 @@ const ListTodolist = () => {
   }, []);
 
   const getTodolist= async () => {
-    const request = await Api.fetchGetAll();
+    const request = await api.fetchGetAll();
     const data = await request.json();
 
     setTodolist(data);
